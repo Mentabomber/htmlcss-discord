@@ -1,0 +1,299 @@
+/* regole generali */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'myFirstFont', sans-serif;
+}
+
+/* bordi ondeggianti */
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 30%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+/* bottoni  */
+.button-white{
+    background-color: white;
+    color: black;
+}
+.button-blue{
+background-color:rgb(88,101,242);
+
+}
+.button-black{
+background-color: rgb(28,27,41);
+
+
+}
+
+.button-small{
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0,0);
+}
+
+.button-medium{
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0,0);
+    font-size: medium;
+}
+.button-big{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0,0);
+    font-size: larger;
+}
+.button-long{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0,0);
+    font-size: larger;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.button-white a{
+    color: black;
+}
+.button-blue a{
+    color: white;
+}
+button a:hover{
+    color:rgb(64,78,237);
+}
+
+/* shadowing sul hovering work in progress */
+.button-black a:hover{
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow:0px 0px 1000px #fdec6e;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+/* regole header */
+
+header{
+    background-color: aqua;
+    margin-bottom: 30px;
+}
+
+#main-nav,#footer-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#main-nav{
+    height: 200px;
+}
+
+#logo{
+    font-size: 40px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 400px;
+}
+
+.white{
+    background-color: white;
+    color:black;
+}
+section{
+    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.upndown.grey-back{
+    padding-bottom: 30px;
+}
+#center-text{
+    text-align: center;
+
+}
+header section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0% 30%;
+    padding-bottom: 100px;
+    width: 40%;
+
+}
+
+/* regole parte centrale */
+main h2{
+    font-size: 70px;
+}
+
+main p{
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 30px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+}
+.white-back{
+    background-color: white;
+}
+.grey-back{
+    background-color: rgb(246,246,246);
+    padding: 0px 0px;
+}
+.box-img{
+    max-height: 50%;
+}
+.white-back .box-img{
+    padding-right: 50px;
+}
+.grey-back .box-img{
+    padding-left: 50px;
+}
+
+.box-text{
+    width: 30%;
+}
+
+.upndown{
+    align-items: center;
+    
+}
+
+.upndown .box-img{
+    padding: 0px 0px 50px 0px;
+    width: 60%;
+}
+.upndown .box-text{
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.upndown.grey-back{
+    justify-content: center;
+    text-align: center;
+  
+
+}
+/* regole nav secondaria */
+
+.sidebar{
+width: 25%;
+padding-left: 10px;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+
+/* regole contenuto principale */
+main section{
+    display: flex;
+    justify-content: center;
+}
+/* regole footer */
+
+footer{
+    min-height: 350px;
+    background-color: rgb(35,39,42);
+
+}
+footer ul{
+    list-style: none;
+    align-items: baseline;
+}
+
+footer ul li:first-child{
+    color: rgb(88,101,242);
+}
+
+footer ul li{
+    line-height: 35px;
+    color: white;
+}
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+footer ul a:hover{
+    text-decoration: underline;
+}
+#footer-nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: solid 2px rgb(88,101,242);
+    width: 80%;
+    margin: 0px 10%;
+    padding: 40px 0px 20px 0px;
+}
+#footer-nav-top h2{
+    font-size: 40px;
+}
+#footer-nav-top ul:first-child{
+    width: 25%;
+}
+#footer-nav-top ul li{
+    padding: 5px;
+}
+#footer-nav-top select{
+    border: none;
+    background-color: rgb(35,39,42);
+    color: white;
+}
+
+select::before {
+    content: url(C:/Users/Menta/Menta Boolean/htmlcss-discord/img/ita.png)
+}
+
+#footer-nav-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 10%;
+    padding-bottom: 20px;
+}
+
+ /* DEBUG  */
+
+.sidebar{
+    background-color: crimson;
+    min-height: 150px;
+    padding-left: 15px;
+}
+
+main{
+    background-color: aqua;
+    min-height: 300px;
+}
+
+
