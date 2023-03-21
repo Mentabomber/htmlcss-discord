@@ -7,6 +7,7 @@
 }
 
 /* bordi ondeggianti */
+
 svg {
     display: inline-block;
     position: absolute;
@@ -93,18 +94,42 @@ button a:hover{
 /* regole header */
 
 header{
-    background-color: aqua;
+    background-image: url("C:/Users/Menta/Menta Boolean/htmlcss-discord/img/jumbo.png");
+    background-size: cover;
     margin-bottom: 30px;
+    color: white;
 }
-
+header ul li a{
+    text-decoration:none ;
+    color: white;
+    
+}
+header ul li{
+    justify-content: space-around;
+    padding-right: 40px;
+}
+header p{
+    line-height: 30px;
+}
+header section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 100px;
+    width: 50%;
+    margin: 0% 25%;
+}
 #main-nav,#footer-nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 #main-nav{
     height: 200px;
+    align-content: flex-start;
+    padding-top: 10px;
 }
 
 #logo{
@@ -114,42 +139,48 @@ header{
 .menu{
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    flex-basis: 400px;
+    justify-content: space-between;
+    /* flex-basis: 400px; */
 }
 
 .white{
     background-color: white;
     color:black;
 }
+
 section{
-    
     justify-content: center;
     flex-wrap: wrap;
 }
 section.upndown.grey-back{
     padding-bottom: 30px;
 }
+h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+    
+}
 #center-text{
     text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
 
 }
-header section{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0% 30%;
-    padding-bottom: 100px;
-    width: 40%;
 
+header section div {
+     padding-right: 20px; /*trova il modo di far avere il padding solo al primo div e non ad entrambi */
 }
+
 
 /* regole parte centrale */
 main h2{
     font-size: 70px;
 }
+main h3{
+    padding-top: 30px;
+    font-size: 30px;
 
+}
 main p{
     font-size: 30px;
     line-height: 40px;
@@ -160,6 +191,7 @@ main p{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
     
 
 }
@@ -173,25 +205,36 @@ main p{
 .box-img{
     max-height: 50%;
 }
+.box-img2{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.box-img2 img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 .white-back .box-img{
     padding-right: 50px;
 }
-.grey-back .box-img{
-    padding-left: 50px;
-}
+
 
 .box-text{
     width: 30%;
 }
-
+.box-text2{
+    width: 80%;
+}
 .upndown{
     align-items: center;
     
 }
 
-.upndown .box-img{
+.upndown .box-img2{
     padding: 0px 0px 50px 0px;
-    width: 60%;
+    width: 80%;
 }
 .upndown .box-text{
     justify-content: center;
@@ -202,8 +245,16 @@ main p{
 .upndown.grey-back{
     justify-content: center;
     text-align: center;
-  
-
+    
+}
+.stars{
+    background-image: url("C:/Users/Menta/Menta Boolean/htmlcss-discord/img/stars.svg");
+    background-size: 32%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+div.stars.box-text{
+    width: 100%;
 }
 /* regole nav secondaria */
 
@@ -216,10 +267,12 @@ padding-left: 10px;
 }
 
 /* regole contenuto principale */
+
 main section{
     display: flex;
     justify-content: center;
 }
+
 /* regole footer */
 
 footer{
@@ -271,8 +324,9 @@ footer ul a:hover{
     color: white;
 }
 
-select::before {
-    content: url(C:/Users/Menta/Menta Boolean/htmlcss-discord/img/ita.png)
+
+select option::before {
+    content: url("../img/ita.png")
 }
 
 #footer-nav-bottom{
